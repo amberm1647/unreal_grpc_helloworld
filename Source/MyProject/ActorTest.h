@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include <string>
+
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "ActorTest.generated.h"

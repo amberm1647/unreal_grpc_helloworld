@@ -20,7 +20,9 @@ void AActorTest::BeginPlay()
 	if (GEngine) {
 		GEngine->AddOnScreenDebugMessage(-1, 20, FColor::Yellow, TEXT("Calling get_reply"));
 	}
-	FString reply = get_reply().c_str();
+
+	const char* target_addr = "10.165.125.33:22";
+	FString reply = get_reply(target_addr).c_str();
 
 	if (GEngine) {
 		GEngine->AddOnScreenDebugMessage(-1, 20, FColor::Red, *reply);
