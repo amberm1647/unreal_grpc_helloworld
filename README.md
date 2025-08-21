@@ -10,11 +10,7 @@ Complete the steps in this repository to build the client dll: https://github.co
 
 Download and install the Epic Games Launcher from the official webpage. https://www.unrealengine.com/en-US/download
 
-If on the Intel network, set Windows system environment variables:
-- HTTP_PROXY: http://proxy-us.intel.com:911
-- HTTPS_PROXY: http://proxy-us.intel.com:912
-- NO_PROXY: localhost,intel.com
-If that doesn't work, try one of these methods: https://www.epicgames.com/help/en-US/c-Category_EpicGamesStore/c-EpicGamesStore_LauncherSupport/how-do-i-use-a-proxy-server-to-connect-to-the-epic-games-launcher-a000084716
+Make sure to set proxy environment variables if on the corporate network.
 
 Install Unreal Engine 5.4.4 from the launcher. 
 
@@ -48,7 +44,7 @@ cd grpc_example\build\Releases\
 
 In the Unreal editor, open the C++ classes folder in the Content Browser. Drag and drop ActorTest into the level, click the Play in Editor button (green play button), and the Hello World text from the gRPC server should appear as debug text in the corner and as a Text Render within the game world.
 
-If the connection fails, check that your client machine is on the Intel network.
+If the connection fails, check that your client machine is on the same network as the server.
 
 ## Where to make changes
 
